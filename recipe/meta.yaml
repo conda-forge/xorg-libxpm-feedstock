@@ -10,7 +10,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.bz2
   url: https://www.x.org/releases/individual/{{ xorg_category }}/{{ xorg_name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
   patches:
@@ -34,6 +33,7 @@ requirements:
     - m2-libintl  # [win]
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
+    - make  # [unix]
   host:
     - gettext  # [not win]
     - pthread-stubs
