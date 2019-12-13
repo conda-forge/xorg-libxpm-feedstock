@@ -1,8 +1,8 @@
 {% set xorg_name = "libXpm" %}
 {% set xorg_category = "lib" %}
 {% set name = "xorg-" ~ xorg_name %}
-{% set version = "3.5.12" %}
-{% set sha256 = "fd6a6de3da48de8d1bb738ab6be4ad67f7cb0986c39bd3f7d51dd24f7854bdec" %}
+{% set version = "3.5.13" %}
+{% set sha256 = "9cd1da57588b6cb71450eff2273ef6b657537a9ac4d02d0014228845b935ac25" %}
 {% set am_version = "1.15" %} # keep synchronized with build.sh
 
 package:
@@ -16,7 +16,7 @@ source:
     - windows.patch  # [win]
 
 build:
-  number: 1002
+  number: 0
   detect_binary_files_with_prefix: true
 
 requirements:
