@@ -31,6 +31,7 @@ requirements:
     - m2-libintl  # [win]
     - m2-gettext  # [win]
     - m2-libintl  # [win]
+    - gettext  # [unix]
     - gnuconfig  # [unix]
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
