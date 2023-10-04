@@ -1,8 +1,8 @@
 {% set xorg_name = "libXpm" %}
 {% set xorg_category = "lib" %}
 {% set name = "xorg-" ~ xorg_name %}
-{% set version = "3.5.16" %}
-{% set sha256 = "e6bc5da7a69dbd9bcc67e87c93d4904fe2f5177a0711c56e71fa2f6eff649f51" %}
+{% set version = "3.5.17" %}
+{% set sha256 = "64b31f81019e7d388c822b0b28af8d51c4622b83f1f0cb6fa3fc95e271226e43" %}
 {% set am_version = "1.15" %} # keep synchronized with build.sh
 
 package:
