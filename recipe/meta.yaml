@@ -1,8 +1,8 @@
 {% set xorg_name = "libXpm" %}
 {% set xorg_category = "lib" %}
 {% set name = "xorg-" ~ xorg_name %}
-{% set version = "3.5.17" %}
-{% set sha256 = "64b31f81019e7d388c822b0b28af8d51c4622b83f1f0cb6fa3fc95e271226e43" %}
+{% set version = "3.5.18" %}
+{% set sha256 = "b4ed79bfc718000edee837d551c35286f0b84576db0ce07bbbebe60a4affa1e4" %}
 {% set am_version = "1.16" %} # keep synchronized with build.sh
 
 package:
@@ -16,7 +16,7 @@ source:
     - windows.patch  # [win]
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage(name|lower) }}
 
